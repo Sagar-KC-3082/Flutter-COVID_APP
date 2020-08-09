@@ -1,0 +1,52 @@
+CustomScrollView(
+        slivers: <Widget>[
+          SliverAppBar(
+            backgroundColor: Colors.pink,
+            title: Container(child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+              Icon(Icons.menu),
+              Icon(Icons.notifications_none)
+            ],),),
+            pinned: true,
+            expandedHeight: 120,
+            flexibleSpace: FlexibleSpaceBar(background:
+            Container(
+              margin: EdgeInsets.fromLTRB(0,90,0,0),
+              //color: Colors.amberAccent,
+              child: Column(
+                children: <Widget>[
+                  Text("Balance : Rs 1221",style: TextStyle(fontSize: 30),)
+                ],
+              ),
+            )
+          )
+          ),
+        SliverList(
+          delegate: SliverChildListDelegate(
+            <Widget>[
+              Container(
+                height: 300,
+                color: Colors.blue,
+                child: Column(children: <Widget>[
+                  Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),Text("hyhyhyhy"),
+                ],)
+              ), Container(
+              height: 100,
+              color:Colors.red,
+              child: Text("Cotnainer2"),
+            ), Container(
+              height: 300,
+              color:Colors.yellowAccent,
+              child: Text("Cotnainer3"),
+            ),
+              Container(
+                height: 400,
+                color:Colors.red,
+                child: Text("Cotnainer2"),
+              ),
+            ]
+          ),
+        )
+        ],
+      )
